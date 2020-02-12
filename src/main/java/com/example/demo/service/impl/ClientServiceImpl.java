@@ -22,7 +22,13 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
+    public Client findClientById(Long id){
+        return clientRepository.findById(id).get();
+    }
+    @Override
     public List<Client> findAllClients() {
         return clientRepository.findAll();
     }
+
+
 }

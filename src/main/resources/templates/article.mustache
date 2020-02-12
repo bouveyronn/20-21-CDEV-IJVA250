@@ -16,11 +16,12 @@
     <label for="prix">prix</label>
     <input type="text" class="form-control" id="prix" name="prix" value={{prix}}>
   </div>
+  {{#lignefacture}}
   <div class="form-group">
     <label for="quantite">quantite</label>
     <input type="text" class="form-control" id="quantite" name="quantite" value={{quantite}}>
   </div>
-
+{{/lignefacture}}
   {{#id}}
         <button type="submit" class="btn btn-primary" formaction="/articles/{{id}}">Modifier</button>
   {{/id}}

@@ -54,4 +54,11 @@ public class Client {
         this.dateNaissance = dateNaissance;
     }
 
+    public Integer getAge(LocalDate dateNaissance){
+        LocalDate now = LocalDate.now();
+        Integer age = dateNaissance.until(now).getYears(); // si on veut l'age en années
+        return age;
+    }
+
+
 }

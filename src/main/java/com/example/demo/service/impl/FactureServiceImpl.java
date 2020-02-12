@@ -25,4 +25,9 @@ public class FactureServiceImpl implements FactureService {
     public List<Facture> findAllFactures() {
         return factureRepository.findAll();
     }
+
+    @Override
+    public Facture findById(Long idFacture) {
+        return factureRepository.findById(idFacture).get();
+    }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface FactureService {
     List<Facture> findAllFactures();
+
+    Facture findById(Long idFacture);
 }
